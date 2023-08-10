@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+      font-family: 'Open Sans', sans-serif;
+  }
+  body {
+      width: 90vw;
+      height: 100vh;
+      /* overflow: hidden; */
+      background: url(ca.png) no-repeat ;
+      background-size: 500px;
+      background-position: left 12% bottom 40%;
+      /* background-position-y: middle 100px; */
+      /* background-position-x: left; */
+      /* position: calc(100vh - 200px); */
+      /* background-image: -moz-radial-gradient(); */
+     
+      /* margin-left: 100%; */
+     
+      /* opacity: 0.9; */
+      /* position: relative; */
+    
+  }
+  body:before {
+      content: "";
+      width: 100%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: 100vh;
+      background: url(bg.png) no-repeat;
+      background-size: 900px;
+      background-position: bottom;
+      padding-right: 800px;
+      z-index: -111;
+      opacity: 0.9;
+  }
+  section#landing-page {
+      /* position: fixed; */
+      width: 100%;
+      max-width: 90%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      z-index: 999;
+  }
+  .branding {
+      display: grid;
+      grid-template-columns: 10% 90%;
+      align-items: center;
+      padding: 20px 0;
+  }
+  
+  ul.listing {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      justify-content:right;
+      overflow:hidden; 
+     
+  }
+  ul.listing li {
+      margin: 0 20px;
+  }
+  ul.listing > li > a {
+      color: #ff8503;
+      text-decoration: double; 
+      font-size: 20px;
+      line-height: 30px;
+      
+      
+  }
+  ul.listing  li  a:hover{
+    background-color: #ee0909;
+    
+  } 
+
+  .site-url {
+      display: block;
+  }
+  .site-url > img {
+      width: 100%;
+      max-width: 100px;
+  }
+  .content {
+      max-width: 1000px; 
+      display: flex; 
+      align-items: right;
+      justify-content: middle;
+       height: calc(100vh - 200px); 
+      padding-left: 680px;
+
+  }
+  h1 {
+      font-size: 60px;
+      font-family: 'Permanent Marker', cursive;
+      color: #ea6d24;
+      line-height: 60px;
+      width: 800px;
+      
+  }
+  p {
+      font-size: 20px;
+      /* line-height: 40px; */
+      color: #ea6d24;
+      margin-top: 30px;
+     
+      font-family: italic small-caps bold 16px/2 cursive;
+  }
+  .content p span{
+    color: #ee0909;
+  }
+  .btn-explore {
+      padding: 20px;
+      display: inline-block;
+      
+      margin-top: 10px;
+      background: url(button.png) no-repeat;
+      background-size: cover;
+      background-position: right 10% top 290%;
+      background-clip: border-box;
+      width: 150px;
+      height: 130px;
+      color: #f8f4f4;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: unset;
+  }
+
+  ul.social-icons.listing {
+    position: fixed;
+    bottom: 20px;
+}
+ul.social-icons.listing > li > a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #f85422;
+    border: 2px solid;
+    border-radius: 100%;
+    font-size: 15px;
+}
+ul.social-icons.listing > li {
+    margin: 0 10px;
+}
+
+  /*ul.social-icons.listing {
+      position: fixed;
+      bottom: 20px;
+      
+  }
+  ul.social-icons.listing > li > a {
+      width: 30px;
+      height: 30px;
+      display: bl;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: #f7890b;
+      border: 2px solid;
+      border-radius: 100%;
+      font-size: 15px;
+  }
+  ul.social-icons.listing > li {
+      margin: 0 10px;
+  }*/
